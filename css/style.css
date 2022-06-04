@@ -1,14 +1,19 @@
 body{
+
+}
+
+#header{
   position: fixed;
-  width: 98%;
+  width: 97.5%;
   margin-top: -20px;
   height: 60px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   background: #87b1fa;
   margin-bottom: 10px;
 }
-@media(max-width: 600px) {
+@media(max-width: 600px){
   header{
     flex-wrap: wrap;
   }
@@ -16,14 +21,132 @@ body{
 .logo{
   position: relative;
   max-width: 10%;
+
 }
-@media(max-width:650px) {
-  logo{
+@media(max-width: 650px){
+logo{
     display: flex;
-  }
+}
 }
 .nav-link{
   color: black;
   text-decoration: none;
+  font-family: georgia;
+}
+@media (max-width: 650px)
+
+a:hover{
+  color: blue;
+}
+ul{
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media(max-width: 600px){
+  ul{
+    flex-direction: column;
+  }
+}
+li{
+  display: inline;
+  margin-top: 10px;
+  padding-bottom: 5px;
+}
+
+.home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+}
+p{
+  font-family: georgia;
+  margin-top: 50px;
+}
+.home input[type=email]{
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+.home input[type=submit]{
+  margin: 15px 0;
+  max-width: 100px;
+  height: 30px;
+  width: 100%;
+  border-radius: 12px;
+  background-color: #87fab3;
   font-family: monospace;
+}
+input[type=submit]:hover{
+  background-color: #4CAF50;
+  color: white;
+  transition: 1s;
+}
+@media(max-width: 650px){
+  home{
+    margin-top: 120px;
+  }
+}
+.just-do-it{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.greatness{
+  max-width: 560px;
+  width: 100%;
+}
+.foot{
+  margin-top: 60px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.legs{
+  width: calc(100% / 3);
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#shoe{
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+ol{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+li{
+  font-family: Helvetica, monospace;
+  text-align: justify;
+}
+ol>a{
+  text-decoration: none;
+  color: #ff4500;
+}
+ol>a:hover{
+  transition: 1s;
+  color: 	#0000ff;
+}
+.footer{
+  text-align: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+footer>a{
+  text-decoration: none;
+  color: #ddd;
+}
+footer>a:hover{
+  color: #da614e;
+  transition: 1s;
 }
