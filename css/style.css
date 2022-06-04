@@ -1,0 +1,29 @@
+body{
+  position: fixed;
+  width: 98%;
+  margin-top: -20px;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  background: #87b1fa;
+  margin-bottom: 10px;
+}
+@media(max-width: 600px) {
+  header{
+    flex-wrap: wrap;
+  }
+}
+.logo{
+  position: relative;
+  max-width: 10%;
+}
+@media(max-width:650px) {
+  logo{
+    display: flex;
+  }
+}
+.nav-link{
+  color: black;
+  text-decoration: none;
+  font-family: monospace;
+}
